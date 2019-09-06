@@ -62,29 +62,32 @@
 
 ### Pull Request
 
-+ 步骤
+步骤
 
-1. 添加我的wechat (目前只开放WeChat)，发给我你的GitHub 
-2. 添加到 CONTRIBUTOR.md 中
+1. 添加我的wechat (目前只开放WeChat)
+2. 添加你的 GitHub到 CONTRIBUTOR.md 中
 3. 发起PR，检验无冲突后合并
 
+> QR CODE
+
+![wechat](https://github.com/gaoljhy/gpack/blob/master/WechatIMG.jpeg)
 
 ## TODO
 
-[ ] Http Module
+- [] Http Module
 
-[ ] Log Module
+- [] Log Module
 
-[ ] API Mapping Module
+- [] API Mapping Module
 
-[ ] makefile(源码make)
+- [] makefile(源码make)
 
-[ ] gpack.h(方便源码引用)
+- [] gpack.h(方便源码引用)
 
-[ ] 使用方法
+- [] 使用方法
 
-[ ] 使用示例
+- [] 使用示例
 
-[ ] 文档说明 
+- [] 文档说明 
 
 ## Usage
