@@ -30,3 +30,61 @@
 </div>
 
 <br>
+
+## 设计
+
+![设计图](https://github.com/gaoljhy/gpack/blob/master/gpack.png)
+
+## 文件路径
+
+```sh
+  .
+  ├── doc
+  ├── gpack.png
+  ├── src
+  │   ├── Modules
+  │   │   ├── API
+  │   │   ├── Http
+  │   │   └── Log
+  │   ├── gpack.h
+  │   └── makefile
+  └── test
+      ├── Map
+      ├── main.cpp
+      └── router.yaml
+```
+
+## Contributor && PR
+
+感谢为此项目作出贡献的Contributor，没有大家的贡献，就没有现在的项目进展，我们一起成长，共同实现。
+
+详情参考 [CONTRIBUTOR](./CONTRUIBUTOR.md)
+
+### Pull Request
+
++ 步骤
+
+1. 添加我的wechat (目前只开放WeChat)，发给我你的GitHub 
+2. 添加到 CONTRIBUTOR.md 中
+3. 发起PR，检验无冲突后合并
+
+
+## TODO
+
+[ ] Http Module
+
+[ ] Log Module
+
+[ ] API Mapping Module
+
+[ ] makefile(源码make)
+
+[ ] gpack.h(方便源码引用)
+
+[ ] 使用方法
+
+[ ] 使用示例
+
+[ ] 文档说明 
+
+## Usage
