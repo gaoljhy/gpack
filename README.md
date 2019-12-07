@@ -56,7 +56,7 @@
 
 ## Contributor && PR
 
-感谢为此项目作出贡献的Contributor，没有大家的贡献，就没有现在的项目进展，我们一起成长，共同实现。
+感谢为此项目作出贡献的 Contributor，没有大家的贡献，就没有现在的项目进展，我们一起成长，共同实现。
 
 详情参考 [CONTRIBUTOR](./CONTRUIBUTOR.md)
 
@@ -64,9 +64,9 @@
 
 步骤
 
-1. 添加我的wechat (目前只开放WeChat)
-2. 添加你的 GitHub到 CONTRIBUTOR.md 中
-3. 发起PR，检验无冲突后合并
+1. 添加我的 wechat (目前只开放 WeChat)
+2. 添加你的 GitHub 到 CONTRIBUTOR.md 中
+3. 发起 PR，检验无冲突后合并
 
 > QR CODE
 
@@ -74,20 +74,51 @@
 
 ## TODO
 
-- [ ] Http Module
+- [+] Http Module | socket | web socket
 
-- [] Log Module
+- [+] Log Module
 
-- [] API Mapping Module
+- [+] Rout Mapping Module
 
-- [] makefile(源码make)
+- [+] setting | middleware | other
 
-- [] gpack.h(方便源码引用)
+- [+] gpack.h(方便源码引用)
 
-- [] 使用方法
-
-- [] 使用示例
-
-- [] 文档说明 
+- [ ] makefile(源码 make)
 
 ## Usage
+
+### json
+
+```cpp
+#include "gpack.h"
+
+int main()
+{
+    Module::SimpleApp app;
+    Module_ROUTE(app, "/json")
+    ([]{
+        Module::json::wvalue x;
+        x["message"] = "Hello, World!";
+        return x;
+    });
+    app.port(18080).multithreaded().run();
+}
+```
+
+### context
+
+```cpp
+#include "Module.h"
+
+int main()
+{
+    Module::SimpleApp app;
+
+    Module_ROUTE(app, "/")([](){
+        return "Hello world";
+    });
+
+    app.port(18080).multithreaded().run();
+}
+```
